@@ -6,6 +6,7 @@ persist.vendor.bt.a2dp.hal.implementation=true
 
 # Camera
 camera.disable_zsl_mode=true
+log.tag.CHIUSECASE=ERROR
 
 # Charger
 ro.charger.disable_init_blank=true
