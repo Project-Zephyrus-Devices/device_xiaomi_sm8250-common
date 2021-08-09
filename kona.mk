@@ -394,6 +394,10 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
+# Refresh Rate RRO
+PRODUCT_PACKAGES += \
+    SettingsOverlayRefreshRate
+
 # RIL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
