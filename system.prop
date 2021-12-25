@@ -123,3 +123,6 @@ persist.wm.enable_remote_keyguard_animation=0
 # Spark-OS
 ro.spark.maintainer= Dark Phoenix
 ro.spark.maintainer.username= Dark Phoenix
+
+#AvoidGfxAccel 
+ro.config.avoid_gfx_accel=true
