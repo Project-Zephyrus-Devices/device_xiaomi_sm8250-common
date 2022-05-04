@@ -31,6 +31,22 @@ dontaudit gmscore_app {
   firmware_file
 }:filesystem getattr;
 
+# Ignore all logging requests
+dontaudit hal_fingerprint storage_file:dir search;
+
+# Ignore harmless QCOM denials
+dontaudit {
+  init
+  priv_app
+} {
+  bt_firmware_file
+  firmware_file
+}:filesystem getattr;
+
+dontaudit priv_app mnt_vendor_file:dir search;
+
+dontaudit hal_wifi_default self:capability sys_module;
+
 # Ignore in user builds
 dontaudit traced_probes debugfs_tracing_debug:file rw_file_perms;
 dontaudit hal_atrace_default debugfs_tracing_debug:file rw_file_perms;

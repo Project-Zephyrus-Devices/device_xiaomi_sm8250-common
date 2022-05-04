@@ -1,0 +1,17 @@
+# Allow systemui to read vendor_sysfs_graphics
+allow platform_app vendor_sysfs_graphics:dir search;
+allow platform_app vendor_sysfs_graphics:file r_file_perms;
+
+allow platform_app zygote:unix_stream_socket { getopt };
+allow platform_app privapp_data_file:file { execute };
+allow platform_app vendor_sysfs_kgsl:file { read open getattr };
+allow platform_app adsprpcd_file:dir { search getattr read };
+allow platform_app adsprpcd_file:dir { search getattr read };
+allow platform_app vendor_camera_data_file:dir getattr;
+allow platform_app hal_camera_default:binder { call transfer };
+typeattribute platform_app hal_camera_client;
+
+get_prop(platform_app, ctl_default_prop)
+
+# Allow zygote unix_stream_socket
+allow platform_app zygote:unix_stream_socket getopt;

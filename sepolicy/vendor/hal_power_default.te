@@ -4,6 +4,9 @@ allow hal_power_default input_device:chr_file rw_file_perms;
 typeattribute hal_power_default mlstrustedsubject;
 
 # Allow hal_power_default to write to f2fs nodes
+allow hal_power_default proc:file { open };
+allow hal_power_default proc:file { write };
+
 allow hal_power_default sysfs_msm_subsys:dir search;
 allow hal_power_default sysfs_msm_subsys:file rw_file_perms;
 allow hal_power_default sysfs_fs_f2fs:dir r_dir_perms;
@@ -15,6 +18,7 @@ allow hal_power_default {
   vendor_sysfs_devfreq
   sysfs_msm_subsys
   sysfs_touchpanel
+  sysfs_fs_f2fs
 }:dir search;
 
 allow hal_power_default {
@@ -27,6 +31,7 @@ allow hal_power_default {
   sysfs_msm_subsys
   vendor_sysfs_scsi_host 
   sysfs_touchpanel
+  sysfs_fs_f2fs
 }:{
   file
   lnk_file

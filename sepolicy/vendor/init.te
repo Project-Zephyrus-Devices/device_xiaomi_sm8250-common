@@ -9,3 +9,11 @@ allow init proc_last_kmsg:file {
 };
 
 allow init adsprpcd_file:file mounton;
+
+# Allow init to read and write to vendor_sysfs_graphics
+allow init vendor_sysfs_graphics:dir search;
+allow init vendor_sysfs_graphics:file rw_file_perms;
+
+# Allow ioctl to zram_swap for performance
+allow init per_boot_file:file ioctl;
+allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };

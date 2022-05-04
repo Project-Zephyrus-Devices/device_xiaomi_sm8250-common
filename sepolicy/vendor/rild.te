@@ -1,1 +1,3 @@
 set_prop(rild, deviceid_prop)
+allow rild vendor_diag_device:chr_file { open read write ioctl };
+allow rild vendor_pd_locater_dbg_prop:file { read };

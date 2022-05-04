@@ -1,8 +1,10 @@
 # SettingsLib
-system_public_prop(settingslib_prop)
+system_public_prop(settingslib_prop);
 
 # IMEI
 vendor_public_prop(deviceid_prop);
 
 vendor_public_prop(vendor_fp_prop);
 
+# Ultrasound
+vendor_public_prop(elliptic_ultrasound_prop);
