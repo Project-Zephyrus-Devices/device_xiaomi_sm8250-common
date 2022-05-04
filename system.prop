@@ -4,6 +4,9 @@ persist.vendor.btstack.enable.twsplus=true
 persist.vendor.btstack.enable.twsplussho=true
 persist.vendor.bt.a2dp.hal.implementation=true
 
+# Bluetooth
+ro.bluetooth.library_name=libbluetooth_qti.so
+
 # Camera
 camera.disable_zsl_mode=true
 log.tag.CHIUSECASE=ERROR
