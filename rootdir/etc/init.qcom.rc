@@ -395,13 +395,15 @@ service iop /system/vendor/bin/iop
     disabled
     socket iop seqpacket 0666 root system
 
-on property:graphics.display.kernel_idle_timer.enabled=true
-    # Switch display mode to 60hz when idle
-    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/idle_mode "@60"
+service vendor.ssr_setup /system/vendor/bin/ssr_setup
+    oneshot
+    disabled
 
-on property:graphics.display.kernel_idle_timer.enabled=false
-    # Disable aggressive idle mode switching
-    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/idle_mode "none"
+service vendor.ss_ramdump /system/bin/subsystem_ramdump_system 2
+    class late_start
+#   user system
+    group system everybody
+    disabled
 
 on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio
