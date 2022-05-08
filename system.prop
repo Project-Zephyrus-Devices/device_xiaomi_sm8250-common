@@ -76,7 +76,7 @@ persist.vendor.ims.disableQXDMLogs=1
 
 # IOP
 vendor.iop.enable_prefetch_ofr=1
-vendor.iop.enable_uxe=0
+vendor.iop.enable_uxe=1
 
 # LMK properties
 ro.lmk.use_minfree_levels=true
