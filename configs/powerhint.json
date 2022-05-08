@@ -421,6 +421,12 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "TASchedtuneBoost",
+      "Duration": 2000,
+      "Value": "30"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 5000,
       "Value": "9999999"
