@@ -1,3 +1,5 @@
+allow system_app apk_data_file:file { ioctl };
+allow system_app incremental_prop:file { read open };
 allow system_app vendor_diag_device:chr_file { read write open };
 allow system_app vendor_sysfs_battery_supply:dir { search };
 allow system_app vendor_sysfs_battery_supply:file { read };
@@ -5,6 +7,7 @@ allow system_app vendor_sysfs_battery_supply:file { open };
 allow system_app vendor_sysfs_battery_supply:file { getattr };
 allow system_app proc_pagetypeinfo:file r_file_perms;
 allow system_app sysfs_kgsl:dir { read getattr search open };
+allow system_app sysfs_msm_subsys:dir { search };
 allow system_app unlabeled:file { read };
 
 allow system_app proc_vmallocinfo:file read;

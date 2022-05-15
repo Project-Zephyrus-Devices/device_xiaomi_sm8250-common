@@ -12,6 +12,9 @@ allow platform_app hal_camera_default:binder { call transfer };
 typeattribute platform_app hal_camera_client;
 
 get_prop(platform_app, ctl_default_prop)
+get_prop(platform_app, vendor_audio_prop);
+
+allow platform_app sysfs_msm_subsys:dir { search };
 
 # Allow zygote unix_stream_socket
 allow platform_app zygote:unix_stream_socket getopt;
