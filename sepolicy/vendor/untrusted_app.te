@@ -14,3 +14,5 @@ dontaudit untrusted_app proc:file { read };
 dontaudit untrusted_app proc:file { open };
 dontaudit untrusted_app proc_net_tcp_udp:file { open };
 dontaudit untrusted_app proc_version:file { read };
+
+allow untrusted_app rootfs:dir { read };
