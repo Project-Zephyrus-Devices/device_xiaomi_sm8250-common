@@ -171,6 +171,16 @@ ro.miui.notch=1
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
 
+# Venom
+ro.surface_flinger.running_without_sync_framework=true
+
+# DHA Tunning
+ro.config.dha_tunnable=1
+
+# Smoothens UI
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+
 #Battery Property
 ro.charger.enable_suspend = 1
 
