@@ -97,6 +97,8 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Bluetooth (FM)
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera motor (sound) - from lmi
 media/audio/ui/popup_cangmen_down.ogg:system_ext/media/audio/ui/popup_cangmen_down.ogg|573b107889ccf639db5455af21129ce1fee93bc5
