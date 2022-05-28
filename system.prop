@@ -134,6 +134,9 @@ persist.rcs.otp_sms_port=0
 # Netmgr
 persist.vendor.data.mode=concurrent
 
+# IORap
+ro.iorapd.enable=true
+
 # Mi
 ro.mi.development=false
 ro.opa.eligible_device=true
