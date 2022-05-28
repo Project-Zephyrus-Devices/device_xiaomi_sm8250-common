@@ -51,11 +51,6 @@
             android:permission="PopupCameraService">
         </service>
 
-        <service
-            android:name=".thermal.ThermalService"
-            android:permission="ThermalService">
-        </service>
-
         <activity
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title"
@@ -132,17 +127,6 @@
             android:name=".thermal.ThermalService"
             android:exported="true"
             android:permission="ThermalService">
-        </service>
-
-        <service
-            android:name=".RefreshRateTileService"
-            android:icon="@drawable/ic_qs_refresh_rate"
-            android:label="@string/refresh_rate_tile_title"
-            android:exported="true"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
         </service>
 
         <activity
