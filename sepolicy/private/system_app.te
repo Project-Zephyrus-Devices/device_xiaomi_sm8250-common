@@ -1,3 +1,5 @@
+get_prop(system_app, settingslib_prop)
+
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file rw_file_perms;
 
