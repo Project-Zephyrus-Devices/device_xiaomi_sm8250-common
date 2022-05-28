@@ -63,6 +63,8 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Bluetooth (FM) - Alioth CN
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Bluetooth (aptX)
 system_ext/bin/aptxalsOverlayCreateProject.sh
