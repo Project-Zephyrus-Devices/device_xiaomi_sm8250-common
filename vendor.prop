@@ -282,6 +282,7 @@ persist.vendor.radio.ignore_dom_time=10
 persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.vdp_on_ims_cap=1
+persist.vendor.qti.telephony.vt_cam_interface=2
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.process_sups_ind=1
 persist.vendor.radio.rat_on=combine
