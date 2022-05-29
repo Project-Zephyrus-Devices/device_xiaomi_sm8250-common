@@ -1,2 +1,4 @@
 # allow systemui to set boot animation colors
 set_prop(platform_app, bootanim_system_prop);
+
+allow platform_app vendor_default_prop:file { map };
