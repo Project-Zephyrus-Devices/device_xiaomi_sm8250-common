@@ -19,6 +19,12 @@ audio.sys.mute.latency.factor=2
 audio.sys.noisy.broadcast.delay=500
 audio.sys.offload.pstimeout.secs=3
 audio.sys.routing.latency=0
+ro.audio.usb.period_us=20375
+af.resampler.quality=7
+ro.audio.resampler.psd.stopband=132
+ro.audio.resampler.psd.halflength=960
+ro.audio.resampler.psd.cutoff_percent=98
+ro.audio.resampler.psd.tbwcheat=0   
 
 # Bluetooth
 bt.max.hfpclient.connections=1
@@ -26,6 +32,7 @@ persist.vendor.btstack.enable.lpa=true
 persist.vendor.btstack.enable.twsplus=true
 persist.vendor.btstack.enable.twsplussho=true
 persist.vendor.bt.a2dp.hal.implementation=true
+persist.bluetooth.sbc_hd_higher_bitrate=1
 persist.vendor.bt.a2dp.mac_whitelist=false
 persist.vendor.btstack.absvolfeature=true
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptiver2-aac-ldac-lhdc
