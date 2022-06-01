@@ -145,6 +145,9 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 # Recommend using the non debug dexpreopter
 USE_DEX2OAT_DEBUG := false
 
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
 # Dex
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-cpu-set=1,2,3,4,5,6,7 \
