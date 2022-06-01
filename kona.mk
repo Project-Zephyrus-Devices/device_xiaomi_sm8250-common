@@ -129,7 +129,8 @@ endif
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     Phonesky \
-    GoogleServicesFramework
+    GoogleServicesFramework \
+    SystemUI
 
 # Don't build debug for host or device
 ART_BUILD_TARGET_NDEBUG := true
