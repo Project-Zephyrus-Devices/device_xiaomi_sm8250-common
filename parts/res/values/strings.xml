@@ -59,10 +59,6 @@
 
     <!-- Thermal Profiles tile -->
     <string name="thermal_tile_title">Thermal Profiles</string>
-    
-    <!-- Raise to wake strings-->
-    <string name="raise_to_wake_gesture_title">Raise to wake</string>
-    <string name="raise_to_wake_gesture_summary">Wake up the device instead of pulsing notification</string>
 
     <!-- Per-app refresh rate -->
     <string name="refresh_title">Per-app refresh rate</string>
