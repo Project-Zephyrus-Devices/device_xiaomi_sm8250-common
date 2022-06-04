@@ -19,3 +19,6 @@ allow platform_app sysfs_msm_subsys:dir { search };
 
 # Allow zygote unix_stream_socket
 allow platform_app zygote:unix_stream_socket getopt;
+allow platform_app hal_dms_hwservice:hwservice_manager find;
+binder_call(platform_app, hal_dms_default)
+allow platform_app app_data_file:file execute;
