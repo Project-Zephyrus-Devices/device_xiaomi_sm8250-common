@@ -6,14 +6,11 @@ tunnel.audio.encode=true
 audio.offload.buffer.size.kb=256
 vendor.audio.offload.gapless.enabled=true
 vendor.voice.path.for.pcm.voip=true
-persist.audio.button_jack.profile=volume
-persist.audio.button_jack.switch=0
 persist.audio.fluence.speaker=true
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 ro.qc.sdk.audio.fluencetype=none
 ro.qc.sdk.audio.ssr=false
-tunnel.audio.encode=true
 use.voice.path.for.pcm.voip=true
 audio.sys.mute.latency.factor=2
 audio.sys.noisy.broadcast.delay=500
@@ -70,7 +67,6 @@ dalvik.vm.dex2oat64.enabled=true
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=0
-debug.sf.latch_unsignaled=0
 persist.vendor.color.matrix=2
 persist.demo.hdmirotationlock=false
 
