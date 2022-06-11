@@ -22,12 +22,9 @@ allow untrusted_app proc_keys:file { getattr };
 allow untrusted_app proc_swaps:file { getattr };
 allow untrusted_app proc_modules:file { read };
 
-allow untrusted_app system_linker_exec:file { execmod };
-
 get_prop(untrusted_app, wifi_hal_prop)
 
 allow untrusted_app rootfs:dir { open };
 allow untrusted_app sysfs:dir { read };
 
 allow untrusted_app block_device:dir { search };
-allow untrusted_app mnt_sdcard_file:lnk_file { read };
