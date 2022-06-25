@@ -1,0 +1,2 @@
+# Allow Private App to find com.android.vndk.current.on_vendor.apex
+allow priv_app vendor_apex_file:dir { search };
