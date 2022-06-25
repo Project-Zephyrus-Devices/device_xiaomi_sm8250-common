@@ -2,3 +2,5 @@
 allow priv_app vendor_sysfs_graphics:file read;
 # Allow Priv-app access zygote unix_stream_socket
 allow priv_app zygote:unix_stream_socket getopt;
+# Allow Private App to find com.android.vndk.current.on_vendor.apex
+allow priv_app vendor_apex_file:dir { search };
