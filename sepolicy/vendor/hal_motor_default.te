@@ -31,3 +31,5 @@ allow hal_motor_default {
 }:file rw_file_perms;
 
 allow hal_motor_default property_socket:sock_file { write };
+
+set_prop(hal_motor_default, vendor_motor_prop)

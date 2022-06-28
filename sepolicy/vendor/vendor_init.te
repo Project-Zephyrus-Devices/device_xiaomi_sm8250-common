@@ -3,7 +3,6 @@ typeattribute vendor_init data_between_core_and_vendor_violators;
 set_prop(vendor_init, vendor_alarm_boot_prop)
 set_prop(vendor_init, vendor_audio_prop)
 set_prop(vendor_init, vendor_fod_prop)
-set_prop(vendor_init, vendor_motor_prop)
 set_prop(vendor_init, vendor_power_prop)
 set_prop(vendor_init, vendor_video_prop)
 set_prop(vendor_init, vendor_camera_prop)
