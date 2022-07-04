@@ -1,6 +1,3 @@
-typeattribute vendor_mdm_helper mlstrustedsubject;
-
-init_daemon_domain(vendor_mdm_helper)
 
 # Allow mdm_helper to have needed access for boot partitions
 allow vendor_mdm_helper vendor_efs_boot_dev:blk_file rw_file_perms;
