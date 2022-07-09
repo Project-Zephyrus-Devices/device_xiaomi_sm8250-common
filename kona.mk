@@ -389,6 +389,10 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay@1.1.vendor \
     vendor.xiaomi.hardware.mtdservice@1.0.vendor
 
+# MultiGen LRU
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.device_config.mglru_native.lru_gen_config=all
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
@@ -556,6 +560,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
+
+# USAP Pool
+PRODUCT_SYSTEM_PROPERTIES += \
+  persist.device_config.runtime_native.usap_pool_enabled=true
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
