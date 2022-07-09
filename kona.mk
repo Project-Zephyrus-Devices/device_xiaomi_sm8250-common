@@ -523,6 +523,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
     $(LOCAL_PATH)/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
+# Smart IDLE Maintaince
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.device_config.storage_native_boot.smart_idle_maint_period=10
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
