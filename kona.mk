@@ -345,6 +345,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
 
+# IORAP Feature -- Readahead
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
