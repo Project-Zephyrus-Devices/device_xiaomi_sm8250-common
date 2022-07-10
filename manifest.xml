@@ -107,7 +107,7 @@
     <hal format="hidl">
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
-        <fqname>@2.1::IFactory/default</fqname>
+        <fqname>@2.2::IFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.alarm</name>
@@ -196,8 +196,8 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
         <transport>hwbinder</transport>
-        <fqname>@1.6::IImsRadio/imsradio0</fqname>
-        <fqname>@1.6::IImsRadio/imsradio1</fqname>
+        <fqname>@1.7::IImsRadio/imsradio0</fqname>
+        <fqname>@1.7::IImsRadio/imsradio1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.internal.deviceinfo</name>
@@ -250,11 +250,6 @@
         <name>vendor.qti.hardware.sensorscalibrate</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::ISensorsCalibrate/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.slmadapter</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::ISlmAdapter/SlmAdapter</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.soter</name>
