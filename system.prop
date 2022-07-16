@@ -122,3 +122,7 @@ ro.zram.periodic_wb_delay_hours=24
 
 # Disable Remote Keygaurd animation
 persist.wm.enable_remote_keyguard_animation=0
+
+# Spark-OS
+ro.spark.maintainer= Dark Phoenix
+ro.spark.maintainer.username= Dark Phoenix
