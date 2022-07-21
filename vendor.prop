@@ -126,6 +126,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 persist.vendor.camera.logInfoMask=false
 persist.vendor.camera.perflock.enable=0
 
+# Camera
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram
+
 # Chipset
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM8250
