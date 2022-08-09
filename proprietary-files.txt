@@ -28,18 +28,28 @@ vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
 # Audio Libraries - Alioth
+vendor/lib/soundfx/libhwdap.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
+vendor/lib/soundfx/libshoebox.so
+vendor/lib/soundfx/libswdap.so
+vendor/lib/soundfx/libswgamedap.so
+vendor/lib/soundfx/libswvqe.so
+vendor/lib64/soundfx/libhwdap.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcvirt.so
+vendor/lib64/soundfx/libshoebox.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib64/soundfx/libswvqe.so
 
 # Audio MiSound Libraries - Alioth
+system_ext/etc/permissions/audiosphere.xml
+system_ext/framework/audiosphere.jar
 vendor/bin/audioflacapp
 vendor/bin/loadalgo
 vendor/lib/soundfx/libmisoundfx.so
-system_ext/etc/permissions/audiosphere.xml
-system_ext/framework/audiosphere.jar
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
