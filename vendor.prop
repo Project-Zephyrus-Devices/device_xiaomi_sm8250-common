@@ -154,6 +154,9 @@ vendor.display.qdcm.mode_combine=1
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
 
+# DPM: disable dpm log
+persist.vendor.dpm.loglevel=0
+
 # Dolby
 ro.vendor.dolby.dax.version=DAX3_3.6.1.6_r1
 vendor.audio.dolby.ds2.enabled=true
@@ -209,12 +212,18 @@ ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 vendor.gralloc.disable_ubwc=0
 
+#Gnss Geofence switch
+persist.sys.gps.fence=true
+
 # Keystore
 ro.hardware.keystore_desede=true
 
 # Media
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
+
+# mdm_helper: Enable modem bootup fail_action for try
+persist.vendor.mdm_helper.fail_action=retry
 
 # NFC
 ro.camera.notify_nfc=1
@@ -230,6 +239,9 @@ ro.vendor.extension_library=libqti-perfd-client.so
 
 # Phantom process monitoring
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
+# Quick charge type detect
+persist.vendor.quick.charge=1
 
 # Radio
 persist.radio.multisim.config=dsds
@@ -283,6 +295,13 @@ ro.config.vc_call_vol_steps=10
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+#sysprop for WLAN
+ro.hardware.wlan.vendor=qcom
+ro.hardware.wlan.chip=639x
+ro.hardware.wlan.mimo=1
+# 0: no dbs, 1: 1x1 dbs, 2: 2x2 dbs
+ro.hardware.wlan.dbs=2
 
 # WFD
 debug.sf.enable_hwc_vds=1
