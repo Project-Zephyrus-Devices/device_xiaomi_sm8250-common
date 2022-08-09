@@ -27,6 +27,18 @@ vendor/lib/libssrec.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
+# Audio OzoProcessing - Alioth
+system_ext/lib/libav_ozodecoder.so:vendor/lib/libav_ozodecoder.so
+system_ext/lib/libav_ozoencoder.so:vendor/lib/libav_ozoencoder.so
+system_ext/lib/libozoaudio.so:vendor/lib/libozoaudio.so
+system_ext/lib/libozowidening.so:vendor/lib/libozowidening.so
+system_ext/lib/soundfx/libozoprocessing.so:vendor/lib/soundfx/libozoprocessing.so
+system_ext/lib64/libav_ozodecoder.so:vendor/lib64/libav_ozodecoder.so
+system_ext/lib64/libav_ozoencoder.so:vendor/lib64/libav_ozoencoder.so
+system_ext/lib64/libozoaudio.so:vendor/lib64/libozoaudio.so
+system_ext/lib64/libozowidening.so:vendor/lib64/libozowidening.so
+system_ext/lib64/soundfx/libozoprocessing.so:vendor/lib64/soundfx/libozoprocessing.so
+
 # Audio Libraries - Alioth
 vendor/lib/soundfx/libhwdap.so
 vendor/lib/soundfx/libqcbassboost.so
