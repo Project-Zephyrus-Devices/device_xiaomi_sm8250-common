@@ -338,6 +338,9 @@
          available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
 
+    <!-- Does the device have a notification led -->
+    <bool name="config_hasNotificationLed">false</bool>
+
     <!-- The duration (in milliseconds) that should be applied to waveform vibrations that ends in
          non-zero amplitudes, to bring the vibrator amplitude down to zero using this timing. -->
     <integer name="config_vibrationWaveformRampDownDuration">50</integer>
