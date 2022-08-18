@@ -357,14 +357,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     IFAAService
 
-# IORAP Feature -- Imported from LA.QSSI.12.0.r1-07100.01-qssi.0
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
-
-# IORAP Feature -- Readahead
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.device_config.runtime_native_boot.iorap_readahead_enable=true
-
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
