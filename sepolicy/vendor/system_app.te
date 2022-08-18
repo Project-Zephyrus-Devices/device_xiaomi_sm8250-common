@@ -11,3 +11,5 @@ allow system_app vendor_sysfs_battery_supply:file { getattr };
 allow system_app vendor_sysfs_graphics:file { getattr open read };
 
 r_dir_file(system_app, vendor_sysfs_battery_supply)
+
+allow system_app proc_pagetypeinfo:file { read };
