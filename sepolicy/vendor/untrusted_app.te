@@ -1,0 +1,12 @@
+
+allow untrusted_app app_data_file:file { execute };
+
+allow untrusted_app cache_file:lnk_file { read };
+
+allow untrusted_app input_device:dir { search };
+
+allow untrusted_app mnt_vendor_file:dir { search };
+
+allow untrusted_app proc_net:file { read };
+
+allow untrusted_app sysfs_net:dir { search };
