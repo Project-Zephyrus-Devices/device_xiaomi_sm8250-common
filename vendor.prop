@@ -127,7 +127,7 @@ persist.vendor.camera.logInfoMask=false
 persist.vendor.camera.perflock.enable=0
 
 # Camera
-vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,org.telegram.plus,tw.nekomimi.nekogram
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
