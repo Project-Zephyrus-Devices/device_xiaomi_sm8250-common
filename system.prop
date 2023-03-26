@@ -4,6 +4,7 @@ persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb
 
 # Camera
+log.tag.CHIUSECASE=ERROR
 camera.disable_zsl_mode=true
 
 # Charger
