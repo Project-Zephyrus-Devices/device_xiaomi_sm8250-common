@@ -39,6 +39,13 @@ allow mi_thermald sysfs_battery_supply:{
   lnk_file
 } rw_file_perms;
 
+# Allow mi_thermald to access vendor battery supply sysfs
+r_dir_file(mi_thermald, vendor_sysfs_battery_supply)
+allow mi_thermald vendor_sysfs_battery_supply:{
+  file
+  lnk_file
+} rw_file_perms;
+
 # Allow mi_thermald to access graphics sysfs
 r_dir_file(mi_thermald, vendor_sysfs_graphics)
 allow mi_thermald vendor_sysfs_graphics:{
