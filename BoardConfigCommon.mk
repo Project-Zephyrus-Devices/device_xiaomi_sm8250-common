@@ -6,12 +6,12 @@
 
 COMMON_PATH := device/xiaomi/sm8250-common
 
+BUILD_BROKEN_CLANG_PROPERTY := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
 ifeq ($(TARGET_IS_VAB),true)
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 AB_OTA_UPDATER := true
 
 # A/B ART
@@ -89,7 +89,7 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Fingerprint
 ifeq ($(TARGET_HAS_UDFPS),true)
-TARGET_SURFACEFLINGER_UDFPS_LIB := //vendor/hardware/xiaomi:libudfps_extension.xiaomi
+TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
 endif
 
 # Kernel
@@ -163,6 +163,10 @@ endif
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+
+# Disable sparse on all filesystem images
+TARGET_USERIMAGES_SPARSE_EROFS_DISABLED := true
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS ?= $(COMMON_PATH)

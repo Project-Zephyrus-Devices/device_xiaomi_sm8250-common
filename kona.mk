@@ -7,11 +7,10 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Project ID Quota
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -474,17 +473,19 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 TARGET_USES_XIAOMI_SENSOR_HAL_1_0 := true
-$(call inherit-product, vendor/hardware/xiaomi/hidl/sensors/sensors_product.mk)
+$(call inherit-product, hardware/xiaomi/hidl/sensors/sensors_product.mk)
 
 PRODUCT_PACKAGES += \
-    libsensorndkbridge
+    libsensorndkbridge \
+    android.hardware.sensors@2.0 \
+    android.hardware.sensors@2.1
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    vendor/hardware/xiaomi \
+    hardware/xiaomi \
     vendor/qcom/opensource/usb/etc
 
 # Telephony
