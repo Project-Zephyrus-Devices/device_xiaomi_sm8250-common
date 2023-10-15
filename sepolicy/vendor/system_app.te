@@ -19,3 +19,10 @@ r_dir_file(system_app, vendor_sysfs_battery_supply)
 
 # Allow Parts write thermals
 allow system_app sysfs_thermal:file rw_file_perms;
+
+# Allow binder calls for system app
+binder_call(system_app, hal_audio_default)
+binder_call(system_app, hal_power_default)
+binder_call(system_app, hal_vibrator_default)
+binder_call(system_app, hal_wifi_default)
+binder_call(system_app, hal_wifi_supplicant_default)
